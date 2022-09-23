@@ -4,6 +4,9 @@
 # testing
 /coverage
 
+# webpack output
+/dist
+
 # production
 /build
 

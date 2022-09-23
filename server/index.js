@@ -10,10 +10,7 @@ if (isDevelopment) {
     var webpackConfig = require('../webpack.dev.js')
     var compiler = webpack(webpackConfig)
 
-    app.use(require("webpack-dev-middleware")(compiler, {
-
-    }))
-
+    app.use(require("webpack-dev-middleware")(compiler, { }))
     app.use(require("webpack-hot-middleware")(compiler))
 }
 

@@ -5,9 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const OutputDir = path.resolve(__dirname, 'dist')
 
 module.exports = {
-    entry: {
-        main: ['./src/index.js']
-    },
+    entry:  ['./src/index.js', 'webpack-hot-middleware/client'],
     output: {
         filename: '[name].js',
         path: OutputDir
@@ -23,6 +21,10 @@ module.exports = {
         test: /\.[jt]sx?$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader','css-loader','postcss-loader'],
       }],
   },
 }
