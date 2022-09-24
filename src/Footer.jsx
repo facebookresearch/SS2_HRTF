@@ -8,9 +8,9 @@ const classes = [
 ]
 
 const Footer = () => {
-    return <div className={classNames(classes)}>
+    return <footer className={classNames(classes)}>
 
-    </div>
+    </footer>
 }
 
 export default Footer;

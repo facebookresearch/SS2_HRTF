@@ -8,9 +8,9 @@ const classes = [
 ]
 
 const Header = () => {
-    return <div className={classNames(classes)}>
+    return <header className={classNames(classes)}>
 
-    </div>
+    </header>
 }
 
 export default Header;
