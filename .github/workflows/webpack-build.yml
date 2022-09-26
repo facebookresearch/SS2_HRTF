@@ -24,6 +24,7 @@ jobs:
       run: |
         npm install        
         git checkout -b release
+        git status
         git rebase main        
         npm run build:prod
         git push public release
