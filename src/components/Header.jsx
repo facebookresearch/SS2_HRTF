@@ -4,7 +4,8 @@ import classNames from 'classnames'
 const classes = [
     'bg-indigo-500',
     'w-screen',
-    'h-40'
+    'h-32',
+    'mb-3.5'
 ]
 
 const Header = () => {
