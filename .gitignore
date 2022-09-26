@@ -4,12 +4,6 @@
 # testing
 /coverage
 
-# webpack output
-/dist
-
-# production
-/build
-
 # misc
 .DS_Store
 .env
