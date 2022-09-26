@@ -23,7 +23,7 @@ jobs:
     - name: Build
       run: |
         npm install        
-        git switch release
+        git checkout release
         git rebase main        
         npm run build:prod
         git push public release
