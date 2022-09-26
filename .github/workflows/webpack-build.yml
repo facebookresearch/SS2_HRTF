@@ -26,4 +26,4 @@ jobs:
         git rebase release
         git switch release
         npm run build:prod
-        npm push public release
+        git push public release
