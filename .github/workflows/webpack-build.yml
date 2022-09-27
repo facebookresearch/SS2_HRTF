@@ -30,6 +30,7 @@ jobs:
         git fetch origin release
         git switch release
         npm install
+        git checkout HEAD -- package-lock.json
 
     - name: Rebase
       run: |
