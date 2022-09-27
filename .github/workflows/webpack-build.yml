@@ -23,17 +23,13 @@ jobs:
     - name: Install
       run: |
         npm install
-        git fetch origin release
-        git branch
-        git status
+        git fetch origin release        
 
     - name: Rebase
       run: |        
         git config --global user.name 'Github Automation'
         git config --global user.email 'rlaudio@users.noreply.github.com'
-        git switch release
-        git checkout HEAD -- package-lock.json
-        git reset --hard origin/release
+        git switch release        
         git rebase -Xtheirs main
 
     - name: Build
