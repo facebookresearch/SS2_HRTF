@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import ReactMarkdown from 'react-markdown'
 
-import IntroductionMd from '../../content/Introduction.md'
+import ConclusionMd from '../../content/Conclusion.md'
 
 const classes = [
     'bg-yellow-100',    
@@ -11,12 +11,12 @@ const classes = [
     '2xl:prose-2xl'
 ]
 
-const Introduction = () => {
+const Conclusion = () => {
     return <article className={classNames(classes)}>
         <ReactMarkdown>
-            {IntroductionMd}
+            {ConclusionMd}
         </ReactMarkdown>
     </article>
 }
 
-export default Introduction
+export default Conclusion

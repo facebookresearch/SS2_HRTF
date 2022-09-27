@@ -2,6 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 
 import Introduction from 'Introduction'
+import Conclusion from 'Conclusion'
 import FileDownloads from 'FileDownloads'
 
 const outerClasses = [
@@ -25,6 +26,7 @@ const Content = () => {
         <div className={classNames(innerClasses)}>
             <Introduction />
             <FileDownloads />
+            <Conclusion />
         </div>
     </div>
 }
