@@ -23,10 +23,11 @@ jobs:
     - name: Build
       run: |
         npm install
-        git fetch
+        git fetch origin release
+        git checkout HEAD -- package-lock.json
         git branch
         git status
-        git checkout release
+        git switch release
         git rebase main        
         npm run build:prod
         git push public release
