@@ -4,8 +4,7 @@ import classNames from 'classnames'
 const classes = [
     'bg-yellow-200',
     'w-screen',
-    'h-16',
-    'mt-3.5'
+    'h-16'
 ]
 
 const Footer = () => {

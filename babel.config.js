@@ -1,6 +1,4 @@
 module.exports = function (api) {
-  //api.cache(true);
-
   const presets = [
     "@babel/preset-env",
     "@babel/preset-react"];
@@ -9,6 +7,8 @@ module.exports = function (api) {
     ? [require.resolve('react-refresh/babel')]
     : []
 
+  console.log(`Babel development mode is ${api.env("development")}. plugins: ${plugins}`)
+  console.log(`NODE_ENV: ${process.env.NODE_ENV}`)
   return {
     presets,
     plugins

@@ -1,18 +1,18 @@
 const path = require('path')
-const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const OutputDir = path.resolve(__dirname, 'dist')
+const ComponentsDir = path.resolve(__dirname, 'src', 'components')
 
 module.exports = {
-    entry:  ['./src/index.js', 'webpack-hot-middleware/client'],
+    entry:  ['./src/index.js'],
     output: {
         filename: '[name].js',
         path: OutputDir
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js', '.jsx'],
-        modules: [path.resolve(__dirname, 'src', 'components'), 'node_modules']          
+        modules: [ComponentsDir, 'node_modules']          
     },
     plugins: [
         new HtmlWebpackPlugin()

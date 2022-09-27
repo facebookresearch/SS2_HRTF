@@ -15,7 +15,9 @@ const outerClasses = [
 
 const innerClasses = [
     'bg-gray-50',
-    'px-36'
+    'px-36',
+    'py-8',
+    'mt-10'
 ]
 
 const Content = () => {

@@ -3,7 +3,9 @@ import classNames from 'classnames'
 
 const classes = [
     'bg-yellow-50',
-    'border-2'
+    'border-2',
+    'my-5',
+    'w-full'
 ]
 
 const FileDownload = () => {

@@ -5,6 +5,7 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 
 
 module.exports = merge(common, {
+    entry:  ['webpack-hot-middleware/client'],
     mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
@@ -12,6 +13,6 @@ module.exports = merge(common, {
     },
     plugins: [
         new HotModuleReplacementPlugin(), // for webpack-hot-piddleware
-        new ReactRefreshWebpackPlugin() // for react-refresh-webpack-plugin
+        new ReactRefreshWebpackPlugin() // for react-refresh-webpack-plugin        
     ],
 })
