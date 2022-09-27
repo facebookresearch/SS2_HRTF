@@ -28,11 +28,10 @@ jobs:
         git branch
         git status
         git switch release
-        git rebase -Xtheirs main        
-        npm run build:prod
-        
         git config --global user.name 'Github Automation'
         git config --global user.email 'rlaudio@users.noreply.github.com'
+        git rebase -Xtheirs main        
+        npm run build:prod
         git add --all .
         git commit -am "Automated report"        
         git push public release
