@@ -28,6 +28,6 @@ jobs:
         git branch
         git status
         git switch release
-        git rebase main        
+        git rebase -Xtheirs main        
         npm run build:prod
         git push public release
