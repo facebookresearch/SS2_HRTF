@@ -23,6 +23,7 @@ jobs:
     - name: Build
       run: |
         npm install
+        git fetch
         git branch
         git status
         git checkout release
