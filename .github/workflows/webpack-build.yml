@@ -33,6 +33,7 @@ jobs:
         git config --global user.email 'rlaudio@users.noreply.github.com'
         git switch release
         git checkout HEAD -- package-lock.json
+        git reset --hard origin/release
         git rebase -Xtheirs main
 
     - name: Build
