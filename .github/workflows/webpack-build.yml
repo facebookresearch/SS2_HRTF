@@ -28,6 +28,10 @@ jobs:
     - name: Install
       run: |
         npm install
+
+    - name: Build
+      run: |
+        npm run build:prod
   
     - name: Deploy with gh-pages
       run: |
