@@ -1,4 +1,4 @@
-name: Rebase And Build Release
+name: Publish With gh-pages
 
 on:
   push:
@@ -26,29 +26,12 @@ jobs:
         git config --global user.email 'rlaudio@users.noreply.github.com'
 
     - name: Install
-      run: |        
-        git fetch origin release
-        git switch release
-        git pull
+      run: |
         npm install
-        git checkout HEAD -- package-lock.json
-
-    - name: Rebase
+  
+    - name: Deploy with gh-pages
       run: |
-        git rebase -Xtheirs main
-
-    - name: Push Rebase
-      run: |
-        git status
-        git push origin release
-
-    - name: Build
-      run: |
-        npm run build:prod
-
-    - name: Push
-      run: |
-        git add --all .
-        git commit -am "Automated Release"
-        git status
-        git push origin release 
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
