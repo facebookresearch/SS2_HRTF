@@ -20,18 +20,28 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build
+    - name: Install
       run: |
         npm install
         git fetch origin release
         git checkout HEAD -- package-lock.json
         git branch
         git status
-        git switch release
+
+    - name: Rebase
+      run: |        
         git config --global user.name 'Github Automation'
         git config --global user.email 'rlaudio@users.noreply.github.com'
-        git rebase -Xtheirs main        
+        git switch release
+        git pull
+        git rebase -Xtheirs main
+
+    - name: Build
+      run: |
         npm run build:prod
+
+    - name: Push
+      run: |        
         git add --all .
         git commit -am "Automated Release"        
         git push origin release
