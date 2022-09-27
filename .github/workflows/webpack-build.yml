@@ -35,6 +35,10 @@ jobs:
     - name: Rebase
       run: |
         git rebase -Xtheirs main
+        git pull
+
+    - name: Push Rebase
+      run: |
         git status
         git push origin release
 
@@ -47,5 +51,4 @@ jobs:
         git add --all .
         git commit -am "Automated Release"
         git status
-        git pull
         git push origin release 
