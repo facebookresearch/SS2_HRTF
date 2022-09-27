@@ -12,4 +12,4 @@ const FileDownload = () => {
         <button>File download button</button>
     </div>
 }
-export default FileDownload;
+export default FileDownload

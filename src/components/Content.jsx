@@ -27,4 +27,4 @@ const Content = () => {
     </div>
 }
 
-export default Content;
+export default Content

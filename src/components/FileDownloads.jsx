@@ -12,7 +12,7 @@ const FileDownloads = () => {
     return <div className={classNames(classes)}>
         <FileDownload />
         <FileDownload />
-        <FileDownload />
+        {/* <FileDownload /> */}
     </div>
 }
-export default FileDownloads;
+export default FileDownloads
