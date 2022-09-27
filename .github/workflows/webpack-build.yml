@@ -24,6 +24,7 @@ jobs:
       run: |
         npm install
         git fetch origin release
+        git switch release
 
     - name: Push Package Lock
       run: |
@@ -35,7 +36,6 @@ jobs:
 
     - name: Rebase
       run: |
-        git switch release        
         git rebase -Xtheirs main
 
     - name: Build
