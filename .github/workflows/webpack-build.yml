@@ -29,13 +29,13 @@ jobs:
       run: |        
         git fetch origin release
         git switch release
+        git pull
         npm install
         git checkout HEAD -- package-lock.json
 
     - name: Rebase
       run: |
         git rebase -Xtheirs main
-        git pull
 
     - name: Push Rebase
       run: |
