@@ -34,6 +34,7 @@ jobs:
     - name: Rebase
       run: |
         git rebase -Xtheirs main
+        git push origin release
 
     - name: Build
       run: |
