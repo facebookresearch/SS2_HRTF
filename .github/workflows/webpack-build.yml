@@ -33,7 +33,6 @@ jobs:
         git config --global user.email 'rlaudio@users.noreply.github.com'
         git switch release
         git checkout HEAD -- package-lock.json
-        git pull
         git rebase -Xtheirs main
 
     - name: Build
@@ -44,4 +43,5 @@ jobs:
       run: |
         git add --all .
         git commit -am "Automated Release"
-        git push origin release
+        git status
+        git push origin release --force
