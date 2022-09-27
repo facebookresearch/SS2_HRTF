@@ -33,5 +33,5 @@ jobs:
         git rebase -Xtheirs main        
         npm run build:prod
         git add --all .
-        git commit -am "Automated report"        
-        git push public release
+        git commit -am "Automated Release"        
+        git push origin release
