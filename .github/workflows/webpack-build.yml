@@ -47,4 +47,5 @@ jobs:
         git add --all .
         git commit -am "Automated Release"
         git status
+        git pull
         git push origin release 
