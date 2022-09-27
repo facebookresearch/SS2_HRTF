@@ -23,7 +23,13 @@ jobs:
     - name: Install
       run: |
         npm install
-        git fetch origin release        
+        git fetch origin release
+
+    - name: Push Package Lock
+      run: |
+        git add --all .
+        git commit -am "Automated Release"
+        git push origin release
 
     - name: Rebase
       run: |        
@@ -40,5 +46,4 @@ jobs:
       run: |
         git add --all .
         git commit -am "Automated Release"
-        git status
-        git push origin release --force
+        git push origin release
