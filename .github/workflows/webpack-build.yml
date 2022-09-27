@@ -33,6 +33,7 @@ jobs:
         git config --global user.name 'Github Automation'
         git config --global user.email 'rlaudio@users.noreply.github.com'
         git switch release
+        git pull
         git rebase -Xtheirs main
 
     - name: Build
@@ -42,6 +43,5 @@ jobs:
     - name: Push
       run: |
         git add --all .
-        git commit -am "Automated Release" 
-        git pull --rebase       
+        git commit -am "Automated Release"
         git push origin release
