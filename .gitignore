@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# Ignore dist
+dist/
+
+# misc
+.DS_Store
+.env
+npm-debug.log
+
+*/**/*.Identifier
