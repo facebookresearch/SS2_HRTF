@@ -8,7 +8,7 @@ to the site, open a file in Github, edit it via the pencil icon and save. Change
 This contains markdown files for sections of the site that are prose. There are currently two: `Introduction.md` and `Conclusion.md`. These appear before and after the files section. 
 
 ### `/files`
-This directory should containt `.zip`, `.pdf` and `.json` files. 
+This directory should containt `.zip`, `.pdf` and `.json` files to download. 
 
 Each `.json` file configures a group of files and a pdf. A group has a documentation pdf, and a list of files. Here is an example:
 ```
