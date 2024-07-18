@@ -31,7 +31,7 @@ Please note that use of the freely available database should go along with citin
 
 ### License
 
-The dataset is distributed under the CC-BY-4.0 license, as found in the LICENSE file.
+The dataset is distributed under the CC-BY-4.0 license, as found in the [LICENSE](https://github.com/facebookresearch/SS2_HRTF/blob/main/LICENSE) file.
 
 ### Additional References
 
