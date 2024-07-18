@@ -9,6 +9,8 @@ A relatively large number of the participants in this database are researchers f
 
 For more details, please see the [academic publication (link to be updated)](https://www.scholear.google.com).
 
+The Audio Team at Reality Labs Research (RLR Audio) is working on novel technologies to enable both audio presence and augmented hearing, letting us hear better in noisy environments with our future AR glasses. In our [blog post](https://about.fb.com/news/2020/09/facebook-reality-labs-research-future-of-audio/) we take you behind the scenes with the team for an in-depth look at some of our demos and prototype technology. 
+
 
 ### Citation
 Please note that use of the freely available database should go along with citing of the publication above. 
@@ -33,7 +35,7 @@ The dataset is distributed under the CC-BY-4.0 license, as found in the LICENSE 
 
 ### Additional References
 
-For more work by the Audio team, please see a selection of recent related publications below:  
+For more work by the RLR Audio Team, please see a selection of recent related publications below:  
 
 
 #### 2024
