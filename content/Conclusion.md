@@ -5,7 +5,7 @@ HRTFs were collected in a purpose-built anechoic chamber housing a vertically or
 
 ![image tag](FRL-Research-Audio-Anechoic-Chamber-2.webp)
 
-A relatively large number of the participants in this database are researchers from the spatial audio research community (who participated in the AVAR 2022 conference). The authors hope that publishing this database may facilitate cross-lab research in the future.
+A relatively large number of the participants in this database are researchers from the spatial audio research community (who participated in the AVAR 2022 conference). The authors hope that publishing this database may facilitate collaborations in the future.
 
 For more details, please see the [academic publication (link to be updated)](https://www.scholear.google.com).
 
