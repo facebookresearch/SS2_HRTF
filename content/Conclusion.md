@@ -2,7 +2,7 @@
 
 HRTFs were collected in a purpose-built anechoic chamber housing a vertically oriented, motorized arc with a 2-meter-radius, which contains 54 loudspeakers spaced every 3° in elevation. Participants were aligned using a height-adjustable platform and wall-mounted cross lasers; their head position and orientation were tracked in real-time during the measurement. Inter- and intra-participant error analyses across more than 1600 incident angles per participant indicate high precision in measurements. In addition to being a high-resolution and a high-precision HRTF database, this database includes the corresponding equalization filters for both commercial headphones and a VR headset, as well as some demographic information for each participant.
 
-![image tag](/FRL-Research-Audio-Anechoic-Chamber-2.webp)
+![image tag](FRL-Research-Audio-Anechoic-Chamber-2.webp)
 
 A relatively large number of the participants in this database are researchers from the spatial audio research community (who participated in the AVAR 2022 conference). The authors hope that publishing this database may facilitate cross-lab research in the future.
 
