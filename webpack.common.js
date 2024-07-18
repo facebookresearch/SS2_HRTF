@@ -19,7 +19,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Reality Labs Audio',
+      title: 'SS2 HRTF Dataset - RLR Audio',
       favicon: path.resolve(ImagesPath, 'RL_Pyramid_BlueGrey.svg')
     }),
     new CopyPlugin({
