@@ -1,8 +1,8 @@
 {
     "title": "HRTF Database",
     "item": {
-        "name": "Download full dataset (final link TBD)",
-        "url": "https://github.com/facebook/rlraudioweb/blob/main/files/HRIRs_mannequins.zip?download="
+        "name": "Download full dataset",
+        "url": "https://github.com/facebook/rlraudioweb/blob/main/files/SS2_HRTF_FullDatabase.zip?download="
     },
     "subitems": [
         {
