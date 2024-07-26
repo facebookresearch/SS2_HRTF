@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.max-h-inf {
+    max-height: 10000px;
+}

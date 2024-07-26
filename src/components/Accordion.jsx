@@ -20,11 +20,11 @@ const itemButtonclass = [
 
 export const AccordionItem = ({ children, title, id, onSelect, isSelected }) => {
     const contentClasses = [
-        isSelected ? '' : 'max-h-0',        
+        isSelected ? 'max-h-inf' : 'max-h-0',        
         'overflow-hidden',
         'transition-all',
         'ease-in-out',
-        'duration-500'
+        'duration-500',
     ]
 
     const iconClasses = [
