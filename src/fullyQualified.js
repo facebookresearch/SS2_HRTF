@@ -18,5 +18,5 @@ export function fullyQualified(relativeUrl) {
     if (relativeUrl[0] == '/')
         relativeUrl = relativeUrl.substr(1, relativeUrl.length - 1)
     
-    return `${location.href}/${relativeUrl}`
+    return `${location.href}${relativeUrl}`
 }
