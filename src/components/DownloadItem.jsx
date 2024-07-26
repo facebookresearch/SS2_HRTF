@@ -6,6 +6,8 @@ import DownloadButton from './DownloadButton'
 
 import { Header4 } from './Heading'
 
+import { fullyQualified } from '../fullyQualified'
+
 const classes = [
     'dark:bg-gray-700',
     'bg-gray-50',
@@ -15,14 +17,37 @@ const classes = [
     'w-full'
 ]
 
+
+function parseItem(item) {
+    if (typeof(item) === 'string') {
+        return  {name: item, url: fullyQualified(item)}
+    }
+
+    return {
+        name: item.name,
+        url: fullyQualified(item.url)
+    }
+}
+
+
+
+const importAll = (r) => r.keys().map(r)
+const zips = importAll(require.context('../../files', false, /\.(zip)$/));
+const pdfs = importAll(require.context('../../files', false, /\.(pdf)$/));
+const items = (ctx => {
+    let keys = ctx.keys();
+    let values = keys.map(ctx);
+    return keys.reduce((o, k, i) => { o[k] = values[i]; return o; }, {});
+})(require.context('../../files', true, /.*\.json/))
+
+
+
+
 const FileDownload = ({item, zips, pdfs}) => {
     const [sizeStr, setSizeStr] = useState('')    
     
     const fileDownloads = item.subitems.map((subitem, i) => {
-        const nameUrl = typeof(subitem) == 'string'
-            ? {name: subitem, url: subitem}
-            : subitem
-        
+        const nameUrl = parseItem(subitem)        
         const hasMetaFile = zips.find(zip => zip.includes(nameUrl.name)) != undefined        
 
         return <DownloadFile 

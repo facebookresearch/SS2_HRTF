@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import classNames from 'classnames'
-import { Header3, Header4, Header5 } from './Heading'
-import buildFilesizeStr from '../buildFilesizeStr'
+import { Header5 } from './Heading'
 import DownloadButton from './DownloadButton'
+
+import { fullyQualified } from '../fullyQualified'
+import buildFilesizeStr from '../buildFilesizeStr'
 
 const classes = [
     'dark:bg-gray-600',
@@ -20,7 +22,7 @@ const DownloadFile = ({ url, name, hasMetaFile = false }) => {
 
     if (hasMetaFile) {
         useEffect(() => {
-            fetch(`${url}.meta`)
+            fetch(`${fullyQualified(url)}.meta`)
                 .then(res => res.json())
                 .then(json => setSizeStr(buildFilesizeStr(json.size)))
         }, [])
