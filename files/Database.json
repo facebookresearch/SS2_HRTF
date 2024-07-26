@@ -26,8 +26,8 @@
             "url": "https://github.com/facebook/rlraudioweb/raw/main/files/Demographics.xls?download="
         },
         {
-            "name": "Documentation (final link TBD)", 
-            "url": "https://github.com/facebook/rlraudioweb/raw/main/files/Hp_Filters.zip?download="
+            "name": "Docmmentation", 
+            "url": "/HRTF_Database_AVAR2024_v5.pdf"
         }        
     ]
 }
