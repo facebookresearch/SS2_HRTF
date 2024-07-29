@@ -6,8 +6,8 @@ import LogoUrl from '../../images/RLR_Logo.png'
 import { ScrollContext } from './App'
 import trackDirty from '../trackDirty'
 
-const FullHeight = 'h-72'
-const SmallHeight = 'h-16'
+const FullHeight = 'h-72 py-4'
+const SmallHeight = 'h-16 py-2'
 
 const classes = [
     'bg-black',
