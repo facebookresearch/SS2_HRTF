@@ -1,29 +1,29 @@
 {
     "title": "HRTF Database",
     "item": {
-        "name": "Full Dataset",
-        "url": "https://github.com/facebook/rlraudioweb/raw/main/files/SS2_HRTF_FullDatabase.zip"
+        "name": "Full Dataset (Please note that the large file size will take a moment to start download)",
+        "url": "https://github.com/facebook/rlraudioweb/raw/main/files/SS2_HRTF_FullDatabase.zip?download="
     },
     "subitems": [
         {
             "name": "HRIRs (human participants)",
-            "url": "/HRIRs.zip"
+            "url": "https://github.com/facebook/rlraudioweb/raw/main/files/HRIRs.zip?download="
         },
         {
             "name": "HRIRs (mannequins)",
-            "url": "/HRIRs_mannequins.zip"
+            "url": "https://github.com/facebook/rlraudioweb/raw/main/files/HRIRs_mannequins.zip?download="
         },
         {
             "name": "HRIRs (repeated human participants)",
-            "url": "/HRIRs_Repeated_Measurements.zip"
+            "url": "https://github.com/facebook/rlraudioweb/raw/main/files/HRIRs_Repeated_Measurements.zip?download="
         },
         {
             "name": "Headphone Filters",
-            "url": "/Hp_Filters.zip"
+            "url": "https://github.com/facebook/rlraudioweb/raw/main/files/Hp_Filters.zip?download="
         },
         {
             "name": "Demographic Data",
-            "url": "/Demographics.xls"
+            "url": "https://github.com/facebook/rlraudioweb/raw/main/files/Demographics.xls?download="
         },
         {
             "name": "Documentation",
