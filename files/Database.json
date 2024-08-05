@@ -2,7 +2,7 @@
     "title": "HRTF Database",
     "item": {
         "name": "Full Dataset",
-        "url": "/SS2_HRTF_FullDatabase.zip"
+        "url": "https://github.com/facebook/rlraudioweb/raw/main/files/SS2_HRTF_FullDatabase.zip"
     },
     "subitems": [
         {
