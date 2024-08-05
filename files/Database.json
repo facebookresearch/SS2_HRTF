@@ -6,28 +6,28 @@
     },
     "subitems": [
         {
-            "name": "HRIRs (human participants)", 
+            "name": "HRIRs (human participants)",
             "url": "https://github.com/facebook/rlraudioweb/raw/main/files/HRIRs.zip?download="
         },
         {
-            "name": "HRIRs (mannequins)", 
+            "name": "HRIRs (mannequins)",
             "url": "https://github.com/facebook/rlraudioweb/raw/main/files/HRIRs_mannequins.zip?download="
         },
         {
-            "name": "HRIRs (repeated human participants)", 
+            "name": "HRIRs (repeated human participants)",
             "url": "https://github.com/facebook/rlraudioweb/raw/main/files/HRIRs_Repeated_Measurements.zip?download="
         },
         {
-            "name": "Headphone Filters", 
+            "name": "Headphone Filters",
             "url": "https://github.com/facebook/rlraudioweb/raw/main/files/Hp_Filters.zip?download="
         },
         {
-            "name": "Demographic Data", 
+            "name": "Demographic Data",
             "url": "https://github.com/facebook/rlraudioweb/raw/main/files/Demographics.xls?download="
         },
         {
-            "name": "Documentation", 
-            "url": "/HRTF_Database_AVAR2024_v5.pdf"
-        }        
+            "name": "Documentation",
+            "url": "/HRTF_Database_AVAR2024_v6.pdf"
+        }
     ]
 }
