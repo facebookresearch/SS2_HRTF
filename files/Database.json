@@ -29,5 +29,10 @@
             "name": "Documentation",
             "url": "/HRTF_Database_AVAR2024_v6.pdf"
         }
+        ,
+        {
+            "name": "Release Notes",
+            "url": "/Release_Notes.txt"
+        }
     ]
 }

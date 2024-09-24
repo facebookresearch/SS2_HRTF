@@ -1,0 +1,4 @@
+Release Notes:
+
+Aug 20, 2024 - V1 - First publication.
+Sep 23, 2024 - update V1 - fix corrupted `ReceiverPosition` field in SOFA files
