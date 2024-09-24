@@ -32,7 +32,7 @@
         ,
         {
             "name": "Release Notes",
-            "url": "/Release_Notes.txt"
+            "url": "https://github.com/facebook/rlraudioweb/raw/main/files/Release_Notes.txt"
         }
     ]
 }
